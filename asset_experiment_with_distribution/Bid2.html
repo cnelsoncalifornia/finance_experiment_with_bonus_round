@@ -1,0 +1,74 @@
+{{ block title }}Second Market{{ endblock }}
+{{ block content }}
+
+    <p>
+        In this round, superstar assets are possible.
+
+        These are the same assets with 6 of the 10 periods now revealed.
+
+    </p>
+
+    <p>
+        Regular assets move +1 with 50% probability.
+
+    </p>
+
+    <p>
+
+        Superstar assets move +1 with 99% probability.
+
+    </p>
+
+    <img src="{{ static image_path1 }}"/>   <br> <br>
+
+    <img src="{{ static image_path2 }}"/>   <br> <br>
+
+    <p>
+        You will answer questions about asset {{ player.asset_6 }}, which is one of the assets with the best
+        movement so far.
+    </p>
+
+    <p>
+        To help you answer these questions, we generated an additional 10,000 assets
+        (different from the ones in this round) where each asset had a 2% chance of being created a superstar.
+        Here are the results:
+    </p>
+
+    <img src="{{ static image_path3 }}"/>
+
+    <p>
+        Out of the 328 assets that increased each of the first 6 periods, 176 were superstars.  This means that
+        <strong>53.66%</strong> (= 176/328) of those that increased each of the first 6 periods were superstars.
+    </p>
+
+    <p>
+        Each one of these assets was given a 2% chance of being a superstar when they were created.
+
+        Now, given the history so far, give your best guess for the updated chance that they are superstars.
+
+        Entering 0 means there is no chance and entering 100 means that it is certain.
+    </p>
+
+    <p>
+        The probability that asset {{ player.asset_6 }} is a superstar:
+
+      {{ formfield 'prob_6'}}
+    </p>
+
+
+    <p>
+        Give your best guess for the final payout in Period 10 for asset {{ player.asset_6 }} (+1 if you get it right):
+    </p>
+        {{ formfield 'guess_6'}}
+
+
+    <p>
+        What is the highest price you are willing to pay for one unit of asset {{ player.asset_6 }}?
+    </p>
+    {{ formfield 'bid_6' }}
+
+
+
+    {{ next_button }}
+
+{{ endblock }}

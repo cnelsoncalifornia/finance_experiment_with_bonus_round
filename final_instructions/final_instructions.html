@@ -1,0 +1,24 @@
+{{ block title }}You have completed the experiment{{ endblock }}
+
+    {{ block content }}
+
+    <p>
+
+    <p> Thank you for participating in this experiment! </p>
+
+    <p> Your cumulative earnings for this experiment was {{ player.final_earnings }}. </p>
+
+    <p> Each experimental currency unit is worth ${{ C.CONVERSION_TO_USD }}. </p>
+
+    <p> If this was an actual experiment you would see the following two lines: </p>
+
+    <p> Your final payment is ${{ player.final_earnings_usd }} or $15.50, whichever is greater.  </p>
+
+    <p> Please let the administrator know that you are done and are ready to collect your payment. </p>
+
+    {{ formfields }}
+
+    {{ next_button }}
+
+
+{{ endblock }}

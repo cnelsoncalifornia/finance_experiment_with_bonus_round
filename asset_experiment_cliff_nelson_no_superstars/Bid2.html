@@ -1,0 +1,60 @@
+{{ block title }}Second Market{{ endblock }}
+{{ block content }}
+
+    <p>
+        In this round, superstar assets are not possible.
+
+        These are the same assets with 6 of the 10 periods now revealed.
+
+    </p>
+
+    <p>
+        Regular assets move +1 with 50% probability.
+
+    </p>
+
+    <img src="{{ static image_path1 }}"/>   <br> <br>
+
+    <img src="{{ static image_path2 }}"/>   <br> <br>
+
+    <p>
+        You will answer questions about the two highlighted assets.  One of the assets is an asset with the best
+        movement so far.  The other one has either the worst movement or an intermediate movement.
+    </p>
+
+    <p>
+        The probability that asset {{ player.asset_6 }} is a superstar:
+    </p>
+        0
+    <br>
+
+    <p>
+        The probability that the asset {{ player.asset_6_2 }} is a superstar:
+    </p>
+        0
+    <br>
+
+    <p>
+        Give your best guess for the final payout in Period 10 for asset {{ player.asset_6 }} (+1 if you get it right):
+    </p>
+        {{ formfield 'guess_6'}}
+
+    <p>
+        Give your best guess for the final payout in Period 10 for asset {{ player.asset_6_2 }} (+1 if you get it right):
+    </p>
+        {{ formfield 'guess_6_2'}}
+
+    <p>
+        What is the highest price you are willing to pay for one unit of asset {{ player.asset_6 }}?
+    </p>
+    {{ formfield 'bid_6' }}
+
+    <p>
+        What is the highest price you are willing to pay for one unit of asset {{ player.asset_6_2 }}?
+    </p>
+    {{ formfield 'bid_6_2' }}
+
+
+    {{ next_button }}
+
+{{ endblock }}

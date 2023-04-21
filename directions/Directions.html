@@ -1,0 +1,47 @@
+{{ block title }}Directions{{ endblock }}
+
+    {{ block content }}
+
+    <p>
+
+    Please read these directions carefully.  There will be a quiz on them before you start the experiment.
+
+    <br><br>
+
+    Welcome to this experiment!  In each round, you can earn experimental currency.  We will convert your experimental currency into US dollars at the end of the experiment.
+    <br><br>
+
+    Each round will present you with a new selection of 15 assets.  You can make offers (bids) to purchase some of these assets.
+
+    <br><br>
+        You can earn experimental currency by buying assets that have payouts higher than the price you paid.  The payouts are revealed in period 10, which is the final period of the round.  You will have the opportunity to bid on assets after period 3 and again after period 6.
+
+    <br><br>
+
+    You can also earn currency by correctly guessing the asset payouts ahead of time.  Guesses done after period 3 only need to be within 1 of the final payout.  Guesses done after period 6 need to match the payout exactly.
+
+<br><br>
+
+    The maximum final payout of any asset is 20, and all your bids must be between 0 and 20.  You are to bid the maximum price you are willing to pay.  Then a random whole number will be drawn.  If the number is less than or equal to your bid, you will acquire the asset at a price equal to the random number.
+
+<br><br>
+    For example, suppose the random number is 7.  You don't acquire the asset if you bid any number below 7.  However, if you bid any number above 7, you acquire the asset at the price of 7.  This process gives you the incentive to state your actual maximum price.
+<br><br>
+    In all rounds, there will be regular assets.  Regular assets increase by 1 or decrease by 1 with equal probability each period.
+<br><br>
+    In some rounds, there may be superstar assets.  The probability that a superstar asset will increase by 1 in any period is 99%.  The probability that a superstar asset will decrease by 1 in any period is 1%.
+<br><br>
+    A regular asset has a 50% chance of increasing in the next period, regardless of its past performance.  Similarly, a superstar asset has a 99% chance of increasing in the next period, regardless of its past performance.
+<br><br>
+    We will tell you at the beginning of each round whether superstar assets are possible in that round.  In those rounds where superstar assets are possible, each asset had a 2% chance of being created a superstar and a 98% chance of being created a regular asset.
+<br><br>
+    Regular assets stay regular, and superstar assets stay superstar.
+<br><br>
+    At the end of all rounds, we will convert your cumulative earnings from experimental currency to US dollars, and you will be paid that amount in cash before exiting.  Each experimental currency unit is worth $0.15.  If your earnings are below $15.50, we will pay you $15.50.
+<br><br>
+    Please press next to start the first round.
+<br><br>
+    </p>
+    {{ next_button }}
+
+{{ endblock }}

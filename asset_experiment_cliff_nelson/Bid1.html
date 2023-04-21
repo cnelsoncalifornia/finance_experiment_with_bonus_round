@@ -1,0 +1,78 @@
+{{ block title }}First Market{{ endblock }}
+{{ block content }}
+
+    <p>
+        In this round, superstar assets are possible.
+
+        For now, only 3 of the 10 periods are revealed.
+
+    </p>
+
+    <p>
+
+        Regular assets move up 1 with 50% probability.
+
+    </p>
+
+    <p>
+
+        Superstar assets move up 1 with 99% probability.
+
+    </p>
+
+    <img src="{{ static image_path1 }}"/>   <br> <br>
+
+    <img src="{{ static image_path2 }}"/>   <br> <br>
+
+    <p>
+        You will answer questions about the two highlighted assets.  One of the assets is an asset with the best
+        movement so far.  The other one has either the worst movement or an intermediate movement so far.
+    </p>
+
+    <p>
+        Each one of these assets was given a 2% chance of being a superstar when they were created.
+
+        Now, given the history so far, give your best guess for the updated chance that they are superstars.
+
+        Entering 0 means there is no chance and entering 100 means that it is certain.
+    </p>
+
+    <p>
+        The probability that asset {{ player.asset_3 }} is a superstar:
+
+      {{ formfield 'prob_3'}}
+    </p>
+
+    <p>
+        The probability that asset {{ player.asset_3_2 }} is a superstar:
+    </p>
+       {{ formfield 'prob_3_2'}}
+
+
+    <p>
+        Give your best guess for the final payout in Period 10 for asset {{ player.asset_3 }} (+1 if your guess is within 1 of the actual value):
+    </p>
+        {{ formfield 'guess_3'}}
+
+    <p>
+        Give your best guess for the final payout in Period 10 for asset {{ player.asset_3_2 }} (+1 if your guess is within 1 of the actual value):
+    </p>
+        {{ formfield 'guess_3_2'}}
+
+    <p>
+        What is the highest price you are willing to pay for one unit of asset {{ player.asset_3 }}?
+    </p>
+    {{ formfield 'bid_3' }}
+
+
+   <p>
+        What is the highest price you are willing to pay for one unit of asset {{ player.asset_3_2 }}?
+    </p>
+    {{ formfield 'bid_3_2' }}
+
+
+
+
+    {{ next_button }}
+
+{{ endblock }}

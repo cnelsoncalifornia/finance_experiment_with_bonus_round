@@ -1,0 +1,46 @@
+{{ block title }}Directions{{ endblock }}
+
+    {{ block content }}
+
+    <p>
+
+    This experiment will consist of 10 rounds.
+        In each round, you will be lent a certain amount of experimental currency and presented with 15 stocks and
+        allowed to make offers (bids) to purchase some of these stocks.
+        Your payment for the round will consist of the final payout of each share of stock that you own minus the
+        price you paid to purchase those shares.
+<br><br>
+    The maximum final payout of any stock is 20 and all your bids must be between 0 and 20.
+        You will bid the maximum price you are willing to pay.  Then a random whole number will be drawn.
+        If the number is less than or equal to your bid, you will acquire the stock at the price equal to the random number.
+<br><br>
+    For example, suppose the random number is 7.  If you had bid any number below 7, then you don't acquire the stock.
+        However, if you bid any number above 7, then you acquire the stock at a price of 7 regardless of how much higher
+        your bid was above 7.  This is done to give you an incentive to state your true maximum price.
+<br><br>
+    In all rounds, there will be regular stocks.  Regular stocks increase by 1 or decrease by 1 with equal probability each period.
+<br><br>
+    In some rounds, there may be superstar stocks.  Superstar stocks increase by 1 with 99% probability and decrease
+        by 1 with 1% probability each period.
+<br><br>
+    Stock movements don't have any memory.
+        This means that a regular stock has a 50% chance of increasing next period, regardless of its past performance.
+        Similarly, a superstar stock has a 99% chance of increasing next period, regardless of its past performance.
+<br><br>
+    You will be told at the beginning of each round whether superstar stocks are possible in that round.
+        In those rounds where superstar stocks are possible, each stock is given a 2% chance of being created a superstar
+        and a 98% chance of being created a regular stock.
+<br><br>
+    Regular stocks stay regular and superstar stocks stay superstar.
+<br><br>
+    At the end of all rounds, your cumulative payments will be converted from experimental currency to US dollars and
+        you will be paid that amount in cash before exiting.  Each experimental currency unit is worth $0.15.
+        If your earnings amount to below the $15.50, then you will be paid $15.50.
+
+<br><br>
+    Please press next to start the first round.
+<br><br>
+    </p>
+    {{ next_button }}
+
+{{ endblock }}
