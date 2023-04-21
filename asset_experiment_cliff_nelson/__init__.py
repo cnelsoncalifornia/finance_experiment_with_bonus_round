@@ -4,7 +4,7 @@ import random
 class C(BaseConstants):
     NAME_IN_URL = 'survey_2'
     PLAYERS_PER_GROUP = None
-    NUM_ROUNDS = 1
+    NUM_ROUNDS = 5
     #CREDIT = 80 # This is sufficient to cover the maximum bidding price of 20 in each of the 4 bidding decisions per round.
     MAX = 20 # Maximum bid.
     NAMES = {
